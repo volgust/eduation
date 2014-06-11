@@ -1,5 +1,5 @@
 <?php
-    if ( $flag_vote && $poll_id ) {
+    //if ( $flag_vote && $poll_id ) {
         global $post, $current_user;
         ?>
 
@@ -8,7 +8,7 @@
                 if ( $closed_vote == 'logged_out' ){ ?>
                     <div class="entry">
                         <div class="message warning">
-                            <?php NFM_Login::please_login('Перед тем, как голосовать'); ?>
+                            <?php  NFM_Login::please_login('Перед тем, как голосовать'); ?>
                         </div>
                     </div>
                     <?php
@@ -125,4 +125,4 @@
                 <?php } ?>
             </form>
         </div>
-    <?php } 
+    <?php // } 
