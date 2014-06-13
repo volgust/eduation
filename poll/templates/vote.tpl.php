@@ -1,5 +1,5 @@
 <?php
-    if ( $flag_vote && $poll_id ) {
+    //if ( $flag_vote && $poll_id ) {
         global $post, $current_user;
         ?>
 
@@ -125,4 +125,4 @@
                 <?php } ?>
             </form>
         </div>
-    <?php  } 
+    <?php  //}
