@@ -4,6 +4,7 @@ require_once dirname(__FILE__).'/poll.db-entity.php';
 
 class NFM_Poll {
 
+    // Bad comment
     static public function setup_vote_view($view, $poll_id, $flag_vote) {
         $view->flag_vote = $flag_vote;
         $view->poll_id = $poll_id;
@@ -23,7 +24,13 @@ class NFM_Poll {
         }
         $view->closed_vote = $closed_vote;
     }
-    
+
+    /**
+     * Function vote
+     *
+     * @param $poll_id
+     * @param $answers
+     */
     static public function vote($poll_id, $answers) {
         global $db_entity_polls;
 
