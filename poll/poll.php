@@ -4,6 +4,14 @@ require_once dirname(__FILE__).'/poll.db-entity.php';
 
 class NFM_Poll {
 
+    /**
+     * Function setup variable
+     *
+     * @param $view
+     * @param $poll_id
+     * @param $flag_vote
+     *
+     */
     static public function setup_vote_view($view, $poll_id, $flag_vote) {
         $view->flag_vote = $flag_vote;
         $view->poll_id = $poll_id;
